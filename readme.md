@@ -1,10 +1,73 @@
-# TruEvent
+## Introduction
+
+The amount of data obtained by fluorescence microscopy of nerve cell cultures is very large both in terms of the number of cells studied and the time of observation, so the problem of algorithmic image processing to obtain some numerical metrics is relevant. For this, machine learning algorithms can be applied that classify objects and events. In order to train a machine learning algorithm to correctly classify objects and events, a person must first solve this task for it. This project is designed to facilitate the labeling of source data when solving machine learning problems.
+
+## Project structure
+
+Project consists of the following directories:
+
+  1. `data` - directory with a small amount of test samples.
+  2. `source` - source code.
+
+## Installation / Getting Started
+
+In VS6.0, open the TruEvent.vbp file
+
+## Development
+
+To start further development of the project, in the Project-TruEvent project tree, select the commform module containing the main functions
+
+## Deploy/publish
+
+The project contains a compiled exe file that does not require additional ocx elements, there should not be any difficulties.
+
+## Functions
+
+The working window of the calcium event editing program includes the following elements:
+
+- area of graphs, which displays the intensity line, average and base lines, suggested and confirmed events
+- list of files in which cell selection is made
+- event parameters field, in which the parameters of the selected event are edited
+- measurement field
+
+The measurement field displays the measurement results:
+
+- height from the top point of the peak to the corresponding baseline point below it for the selected event (absolute and relative values);
+- height between the selected points of the intensity line (absolute and relative values);
+- duration of the selected event in seconds.
+
+By clicking on the graph area with the left mouse button, you can add a new event if it was skipped by the preliminary event detection algorithm.
+
+By pressing the right mouse button on the graph area, the points between which the measurement is carried out are indicated. After the first click, the measurement field displays the inscription specify the 2nd point. Then, in the graph area, by pressing the right mouse button, you need to specify the position of the second point.
+
+## Configuration
+
+Data is prepared using a module implemented in Matlab
+
+## Contribute
+
+If you'd like to contribute, please fork the repository and use the feature branch. Pull requests are welcome
+
+## Links
+
+- Project homepage: https://github.com/TVK-dev/TruEvent
+- Repository: https://github.com/TVK-dev/TruEvent
+- Related projects:
+   - Python library: https://github.com/TVK-dev/Intensity
+   - Astrocyte Laboratory repository: [https://github.com/UNN-VMK-Software/astro-analysis](https://github.com/UNN-VMK-Software/astro-analysis)
+
+## Licensing
+
+The code in this project is licensed under the Attribution-NonCommercial 2.0 Generic license
+
+
+
+## Введение
 
 Одним из методов исследования высшей нервной деятельности является флюоресцентная микроскопия. Это связано с тем, что самые распространённые глиальные клетки – астроциты хоть и являются электрически невозбудимыми, но также участвуют в процессах, связанных с передачей сигналов, генерируя кальциевые сигналы. А кальциевые сигналы можно легко визуализировать при помощи флуоресцентных маркеров.
 
-Объём данных, полученных при флюоресцентной микроскопии очень велик как по количеству изучаемых клеток, так и по времени наблюдения, поэтому актуальна задача алгоритмической обработки изображений для получения некоторых численных метрик. Для этого могут быть применены алгоритмы машинного обучения, осуществляющие классификацию объектов и событий.
-
-Чтобы алгоритм машинного обучения научился правильно классифицировать объекты и события, за него это задачу сначала должен решить человек. Для облегчения разметки исходных данных для машинного обучения предназначен данный проект.
+Объём данных, полученных при флюоресцентной микроскопии культур нервных клеток очень велик как по количеству изучаемых клеток, так и по времени наблюдения, поэтому актуальна задача алгоритмической обработки изображений для получения некоторых численных метрик. Для этого могут быть применены алгоритмы машинного обучения, осуществляющие классификацию объектов и событий.
+Чтобы алгоритм машинного обучения обучить верно классифицировать объекты и события, за него это задачу сначала должен решить человек. Данный проект предназначен для облегчения разметки исходных данных при решении задач машинного обучения.
 
 ## Установка / Начало работы
 
